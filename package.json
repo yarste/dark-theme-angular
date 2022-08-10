@@ -1,6 +1,7 @@
 {
   "name": "dark-mode-angular",
-  "version": "0.0.0",
+  "author": "Yar",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

@@ -1,0 +1,255 @@
+* {
+
+  /* general colors */
+
+  --white: #fff;
+
+  --blue-100: #1976d2;
+  --blue-200: #125699;
+
+  --gray-100: #eee;
+  --gray-200: #fafafa;
+  --gray-300: #c2c3c4;
+  --gray-400: #888;
+
+  --dark-gray-100: rgb(58, 58, 58);
+  --dark-gray-200: #303030;
+  --dark-gray-300: rgba(27,31,35,.2);
+  --dark-gray-400: rgba(27,31,35,.35);
+  --dark-gray-500: rgb(15, 15, 16);
+
+
+
+  /* light */
+
+
+
+  --body-background-light: var(--white);
+  --toolbar-background-light: var(--blue-100);
+  --toolbar-color-light: var(--white);
+  --card-border-color-light: var(--gray-100);
+  --card-background-light: var(--gray-200);
+  --card-background-highlight-light: var(--blue-100);
+  --card-color-highlight-light: var(--white);
+  --link-color-light: var(--blue-100);
+  --link-color-hover-light: var(--blue-200);
+  --terminal-background-header-light: var(--dark-gray-100);
+  --terminal-background-body-light: var(--dark-gray-500);
+  --terminal-color-light: var(--gray-300);
+  --terminal-pre-color-light: var(--white);
+  --svg-cloud-fill-light: var(--gray-100);
+  --matrial-icon-fill-light: var(--gray-300);
+  --rocket-smoke-fill-light: var(--gray-100);
+
+  --circle-link-background-light: var(--white);
+  --circle-link-border-color-light: var(--gray-100);
+
+  --switcher-background-light: var(--white);
+  --switcher-background-active-light: var(--gray-100);
+
+
+  /* dark */
+
+  --body-background-dark: var(--dark-gray-100);
+  --toolbar-background-dark: var(--dark-gray-400);
+  --toolbar-color-dark: var(--white);
+  --card-border-color-dark: var(--dark-gray-200);
+  --card-background-dark: var(--dark-gray-200);
+  --card-background-highlight-dark: var(--blue-100);
+  --card-color-highlight-dark: var(--white);
+  --link-color-dark: var(--blue-100);
+  --link-color-hover-dark: var(--blue-200);
+  --terminal-background-header-dark: var(--dark-gray-400);
+  --terminal-background-body-dark: var(--dark-gray-500);
+  --terminal-color-dark: var(--gray-300);
+  --terminal-pre-color-dark: var(--gray-200);
+  --svg-cloud-fill-dark: var(--dark-gray-200);
+  --matrial-icon-fill-dark: var(--gray-300);
+  --rocket-smoke-fill-dark: var(--dark-gray-300);
+
+  --circle-link-background-dark: var(--dark-gray-100);
+  --circle-link-border-color-dark: var(--dark-gray-200);
+
+  --switcher-background-dark: var(--dark-gray-300);
+  --switcher-background-active-dark: var(--dark-gray-400);
+
+}
+
+:root {
+  color-scheme: light;
+
+  /* set defaults */
+  --background: var(--body-background-light);
+
+  --toolbar-background: var(--toolbar-background-light);
+  --toolbar-color: var(--toolbar-color-light);
+
+  --card-border-color: var(--card-border-color-light);
+  --card-background: var(--card-background-light);
+  --card-background-highlight: var(--card-background-highlight-light);
+  --card-color-highlight: var(--card-color-highlight-light);
+
+  --link-color: var(--link-color-light);
+  --link-color-hover:  var(--link-color-hover-light);
+
+  --terminal-background-header: var(--terminal-background-header-light);
+  --terminal-background-body: var(--terminal-background-body-light);
+  --terminal-color: var(--terminal-color-light);
+  --terminal-pre-color: var(--terminal-pre-color-light);
+
+  --svg-cloud-fill: var(--svg-cloud-fill-light);
+
+  --matrial-icon-fill: var(--matrial-icon-fill-light);
+  --rocket-smoke-fill: var(--rocket-smoke-fill-light);
+
+  --circle-link-background: var(--circle-link-background-light);
+  --circle-link-border-color: var(--circle-link-border-color-light);
+
+  --switcher-background: var(--switcher-background-light);
+  --switcher-background-active: var(--switcher-background-active-light);
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --background: var(--body-background-dark);
+
+    --toolbar-background: var(--toolbar-background-dark);
+    --toolbar-color: var(--toolbar-color-dark);
+
+    --card-border-color: var(--card-border-color-dark);
+    --card-background: var(--card-background-dark);
+    --card-background-highlight: var(--card-background-highlight-dark);
+    --card-color-highlight: var(--card-color-highlight-dark);
+
+    --link-color: var(--link-color-dark);
+    --link-color-hover:  var(--link-color-hover-dark);
+
+    --terminal-background-header: var(--terminal-background-header-dark);
+    --terminal-background-body: var(--terminal-background-body-dark);
+    --terminal-color: var(--terminal-color-dark);
+    --terminal-pre-color: var(--terminal-pre-color-dark);
+
+    --svg-cloud-fill: var(--svg-cloud-fill-dark);
+
+    --matrial-icon-fill: var(--matrial-icon-fill-dark);
+    --rocket-smoke-fill: var(--rocket-smoke-fill-dark);
+
+    --circle-link-background: var(--circle-link-background-dark);
+    --circle-link-border-color: var(--circle-link-border-color-dark);
+
+    --switcher-background: var(--switcher-background-dark);
+    --switcher-background-active: var(--switcher-background-active-dark);
+
+  }
+}
+
+[color-scheme="light"] {
+  color-scheme: light;
+
+  /* set defaults */
+  --background: var(--body-background-light);
+
+  --toolbar-background: var(--toolbar-background-light);
+  --toolbar-color: var(--toolbar-color-light);
+
+  --card-border-color: var(--card-border-color-light);
+  --card-background: var(--card-background-light);
+  --card-background-highlight: var(--card-background-highlight-light);
+  --card-color-highlight: var(--card-color-highlight-light);
+
+  --link-color: var(--link-color-light);
+  --link-color-hover:  var(--link-color-hover-light);
+
+  --terminal-background-header: var(--terminal-background-header-light);
+  --terminal-background-body: var(--terminal-background-body-light);
+  --terminal-color: var(--terminal-color-light);
+  --terminal-pre-color: var(--terminal-pre-color-light);
+
+  --svg-cloud-fill: var(--svg-cloud-fill-light);
+
+  --matrial-icon-fill: var(--matrial-icon-fill-light);
+  --rocket-smoke-fill: var(--rocket-smoke-fill-light);
+
+  --circle-link-background: var(--circle-link-background-light);
+  --circle-link-border-color: var(--circle-link-border-color-light);
+
+  --switcher-background: var(--switcher-background-light);
+  --switcher-background-active: var(--switcher-background-active-light);
+
+}
+
+[color-scheme="dark"] {
+  color-scheme: dark;
+
+  --background: var(--body-background-dark);
+
+  --toolbar-background: var(--toolbar-background-dark);
+  --toolbar-color: var(--toolbar-color-dark);
+
+  --card-border-color: var(--card-border-color-dark);
+  --card-background: var(--card-background-dark);
+  --card-background-highlight: var(--card-background-highlight-dark);
+  --card-color-highlight: var(--card-color-highlight-dark);
+
+  --link-color: var(--link-color-dark);
+  --link-color-hover:  var(--link-color-hover-dark);
+
+  --terminal-background-header: var(--terminal-background-header-dark);
+  --terminal-background-body: var(--terminal-background-body-dark);
+  --terminal-color: var(--terminal-color-dark);
+  --terminal-pre-color: var(--terminal-pre-color-dark);
+
+  --svg-cloud-fill: var(--svg-cloud-fill-dark);
+
+  --matrial-icon-fill: var(--matrial-icon-fill-dark);
+  --rocket-smoke-fill: var(--rocket-smoke-fill-dark);
+
+
+  --circle-link-background: var(--circle-link-background-dark);
+  --circle-link-border-color: var(--circle-link-border-color-dark);
+
+  --switcher-background: var(--switcher-background-dark);
+  --switcher-background-active: var(--switcher-background-active-dark);
+
+}
+
+
+
+/**/
+
+
+.card svg.material-icons path {
+  fill: #888;
+}
+.card {
+
+
+
+}
+
+.card.highlight-card {
+
+}
+
+
+
+
+
+.circle-link {
+  background-color: var(--terminal-pre-color);
+  border: 1px solid var(--background);
+}
+
+/*.github-star-badge {*/
+/*  color: #24292e;*/
+/*  border: 1px solid rgba(27,31,35,.2);*/
+/*  background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);*/
+/*}*/
+
+/*.github-star-badge:hover {*/
+/*  background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);*/
+/*  border-color: rgba(27,31,35,.35);*/
+/*}*/

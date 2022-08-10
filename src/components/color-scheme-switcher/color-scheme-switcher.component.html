@@ -1,0 +1,5 @@
+<div class="switcher" [ngClass]="currentScheme">
+  <button *ngFor="let scheme of colorSchemeOptions"
+          [ngClass]="{ 'active' : currentScheme === scheme.value}"
+          (click)="setTheme(scheme.value)">{{scheme.label}}</button>
+</div>
